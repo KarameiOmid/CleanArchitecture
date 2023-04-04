@@ -1,0 +1,182 @@
+2023-03-17 23:52:14.042 +10:30 [INF] Registered 5 endpoints in 1436 milliseconds.
+2023-03-17 23:52:14.682 +10:30 [INF] User profile is available. Using 'C:\Users\78112\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-17 23:52:17.527 +10:30 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-03-17 23:52:17.837 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Contributors" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Contributors" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL
+);
+2023-03-17 23:52:17.839 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Projects" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Projects" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Priority" INTEGER NOT NULL
+);
+2023-03-17 23:52:17.840 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ToDoItems" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_ToDoItems" PRIMARY KEY AUTOINCREMENT,
+    "Title" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "ContributorId" INTEGER NULL,
+    "IsDone" INTEGER NOT NULL,
+    "ProjectId" INTEGER NULL,
+    CONSTRAINT "FK_ToDoItems_Projects_ProjectId" FOREIGN KEY ("ProjectId") REFERENCES "Projects" ("Id")
+);
+2023-03-17 23:52:17.841 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_ToDoItems_ProjectId" ON "ToDoItems" ("ProjectId");
+2023-03-17 23:52:18.616 +10:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-17 23:52:18.823 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Priority"
+FROM "Projects" AS "p"
+2023-03-17 23:52:18.863 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."ContributorId", "t"."Description", "t"."IsDone", "t"."ProjectId", "t"."Title"
+FROM "ToDoItems" AS "t"
+2023-03-17 23:52:18.881 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name"
+FROM "Contributors" AS "c"
+2023-03-17 23:52:19.459 +10:30 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name")
+VALUES (@p0)
+RETURNING "Id";
+2023-03-17 23:52:19.517 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 8)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name")
+VALUES (@p0)
+RETURNING "Id";
+2023-03-17 23:52:19.828 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 12), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Projects" ("Name", "Priority")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2023-03-17 23:52:19.856 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@p2='?' (DbType = Int32), @p3='?' (Size = 31), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p6='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ToDoItems" ("ContributorId", "Description", "IsDone", "ProjectId", "Title")
+VALUES (@p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2023-03-17 23:52:19.860 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 81), @p2='?' (DbType = Boolean), @p3='?' (DbType = Int32), @p4='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ToDoItems" ("ContributorId", "Description", "IsDone", "ProjectId", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2023-03-17 23:52:19.862 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 59), @p2='?' (DbType = Boolean), @p3='?' (DbType = Int32), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ToDoItems" ("ContributorId", "Description", "IsDone", "ProjectId", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2023-03-17 23:52:20.099 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-17 23:52:20.100 +10:30 [INF] Hosting environment: Development
+2023-03-17 23:52:20.100 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-17 23:52:20.150 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-17 23:52:20.484 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-17 23:52:20.554 +10:30 [INF] Executing endpoint 'Keystone.TestArchitecture.Web.Controllers.HomeController.Index (Keystone.TestArchitecture.Web)'
+2023-03-17 23:52:20.579 +10:30 [INF] Route matched with {action = "Index", controller = "Home", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Keystone.TestArchitecture.Web.Controllers.HomeController (Keystone.TestArchitecture.Web).
+2023-03-17 23:52:20.601 +10:30 [INF] Executing ViewResult, running view Index.
+2023-03-17 23:52:21.118 +10:30 [INF] Executed ViewResult - view Index executed in 519.7176ms.
+2023-03-17 23:52:21.140 +10:30 [INF] Executed action Keystone.TestArchitecture.Web.Controllers.HomeController.Index (Keystone.TestArchitecture.Web) in 559.7958ms
+2023-03-17 23:52:21.141 +10:30 [INF] Executed endpoint 'Keystone.TestArchitecture.Web.Controllers.HomeController.Index (Keystone.TestArchitecture.Web)'
+2023-03-17 23:52:21.303 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 200 - text/html;+charset=utf-8 1159.7736ms
+2023-03-17 23:52:21.357 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/lib/bootstrap/dist/css/bootstrap.min.css - -
+2023-03-17 23:52:21.368 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2023-03-17 23:52:21.369 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2023-03-17 23:52:21.369 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2023-03-17 23:52:21.376 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/Keystone.TestArchitecture.Web.styles.css?v=0Hbiy-yChodR0j5g8THgxUZeL9GHEAE16qLhb10kIT4 - -
+2023-03-17 23:52:21.380 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/lib/jquery/dist/jquery.min.js - -
+2023-03-17 23:52:21.454 +10:30 [INF] Sending file. Request path: '/Keystone.TestArchitecture.Web.styles.css'. Physical path: 'C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web\obj\Debug\net7.0\scopedcss\bundle\Keystone.TestArchitecture.Web.styles.css'
+2023-03-17 23:52:21.454 +10:30 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web\wwwroot\lib\jquery\dist\jquery.min.js'
+2023-03-17 23:52:21.454 +10:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2023-03-17 23:52:21.454 +10:30 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web\wwwroot\js\site.js'
+2023-03-17 23:52:21.455 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 text/javascript 85.5363ms
+2023-03-17 23:52:21.454 +10:30 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web\wwwroot\css\site.css'
+2023-03-17 23:52:21.459 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/Keystone.TestArchitecture.Web.styles.css?v=0Hbiy-yChodR0j5g8THgxUZeL9GHEAE16qLhb10kIT4 - - - 200 1146 text/css 82.5479ms
+2023-03-17 23:52:21.454 +10:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2023-03-17 23:52:21.460 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 91.1968ms
+2023-03-17 23:52:21.472 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/lib/jquery/dist/jquery.min.js - - - 200 89478 text/javascript 91.6590ms
+2023-03-17 23:52:21.473 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162726 text/css 116.9671ms
+2023-03-17 23:52:21.475 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78474 text/javascript 105.7315ms
+2023-03-17 23:52:21.479 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-03-17 23:52:21.503 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-03-17 23:52:21.513 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 8.8376ms
+2023-03-17 23:52:21.733 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 254.0427ms
+2023-03-17 23:52:22.595 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/favicon.ico - -
+2023-03-17 23:52:22.606 +10:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web\wwwroot\favicon.ico'
+2023-03-17 23:52:22.606 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/favicon.ico - - - 200 5430 image/x-icon 11.7809ms
+2023-03-17 23:53:16.936 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger - -
+2023-03-17 23:53:16.945 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger - - - 301 - - 8.8446ms
+2023-03-17 23:53:16.949 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-03-17 23:53:17.161 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;charset=utf-8 212.2597ms
+2023-03-17 23:53:17.223 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-03-17 23:53:17.223 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui.css - -
+2023-03-17 23:53:17.223 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui-bundle.js - -
+2023-03-17 23:53:17.227 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 4.0435ms
+2023-03-17 23:53:17.228 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui-standalone-preset.js - -
+2023-03-17 23:53:17.240 +10:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-03-17 23:53:17.253 +10:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-03-17 23:53:17.260 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-03-17 23:53:17.280 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui.css - - - 200 143943 text/css 56.8353ms
+2023-03-17 23:53:17.285 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 57.5376ms
+2023-03-17 23:53:17.333 +10:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-03-17 23:53:17.433 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 172.5990ms
+2023-03-17 23:53:17.468 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 244.6238ms
+2023-03-17 23:53:18.108 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - -
+2023-03-17 23:53:18.202 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/favicon-32x32.png - -
+2023-03-17 23:53:18.208 +10:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-03-17 23:53:18.209 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/favicon-32x32.png - - - 200 628 image/png 6.4841ms
+2023-03-17 23:53:18.606 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 496.9736ms
+2023-03-17 23:54:07.698 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/Projects/1 - -
+2023-03-17 23:54:07.701 +10:30 [INF] Executing endpoint 'Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetById.HandleAsync (Keystone.TestArchitecture.Web)'
+2023-03-17 23:54:07.755 +10:30 [INF] Route matched with {action = "Handle", controller = "GetById", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetProjectByIdResponse]] HandleAsync(Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetProjectByIdRequest, System.Threading.CancellationToken) on controller Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetById (Keystone.TestArchitecture.Web).
+2023-03-17 23:54:08.338 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[@__projectId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Name", "t"."Priority", "t0"."Id", "t0"."ContributorId", "t0"."Description", "t0"."IsDone", "t0"."ProjectId", "t0"."Title"
+FROM (
+    SELECT "p"."Id", "p"."Name", "p"."Priority"
+    FROM "Projects" AS "p"
+    WHERE "p"."Id" = @__projectId_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "ToDoItems" AS "t0" ON "t"."Id" = "t0"."ProjectId"
+ORDER BY "t"."Id"
+2023-03-17 23:54:08.387 +10:30 [INF] Executing OkObjectResult, writing value of type 'Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetProjectByIdResponse'.
+2023-03-17 23:54:08.605 +10:30 [INF] Executed action Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetById.HandleAsync (Keystone.TestArchitecture.Web) in 850.1036ms
+2023-03-17 23:54:08.606 +10:30 [INF] Executed endpoint 'Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetById.HandleAsync (Keystone.TestArchitecture.Web)'
+2023-03-17 23:54:08.613 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/Projects/1 - - - 200 420 application/json;+charset=utf-8 914.7846ms
+2023-03-17 23:54:59.677 +10:30 [INF] Request starting HTTP/1.1 PATCH http://localhost:57678/api/Projects/1/complete/1 - -
+2023-03-17 23:54:59.678 +10:30 [INF] Executing endpoint 'Keystone.TestArchitecture.Web.Api.ProjectsController.Complete (Keystone.TestArchitecture.Web)'
+2023-03-17 23:54:59.697 +10:30 [INF] Route matched with {action = "Complete", controller = "Projects", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Complete(Int32, Int32) on controller Keystone.TestArchitecture.Web.Api.ProjectsController (Keystone.TestArchitecture.Web).
+2023-03-17 23:54:59.714 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@__projectId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Name", "t"."Priority", "t0"."Id", "t0"."ContributorId", "t0"."Description", "t0"."IsDone", "t0"."ProjectId", "t0"."Title"
+FROM (
+    SELECT "p"."Id", "p"."Name", "p"."Priority"
+    FROM "Projects" AS "p"
+    WHERE "p"."Id" = @__projectId_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "ToDoItems" AS "t0" ON "t"."Id" = "t0"."ProjectId"
+ORDER BY "t"."Id"
+2023-03-17 23:54:59.733 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 12), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Projects" SET "Name" = @p0, "Priority" = @p1
+WHERE "Id" = @p2
+RETURNING 1;
+2023-03-17 23:54:59.737 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "ToDoItems" SET "IsDone" = @p0
+WHERE "Id" = @p1
+RETURNING 1;
+2023-03-17 23:54:59.771 +10:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-03-17 23:54:59.771 +10:30 [INF] Executed action Keystone.TestArchitecture.Web.Api.ProjectsController.Complete (Keystone.TestArchitecture.Web) in 73.6874ms
+2023-03-17 23:54:59.771 +10:30 [INF] Executed endpoint 'Keystone.TestArchitecture.Web.Api.ProjectsController.Complete (Keystone.TestArchitecture.Web)'
+2023-03-17 23:54:59.772 +10:30 [INF] Request finished HTTP/1.1 PATCH http://localhost:57678/api/Projects/1/complete/1 - - - 200 - - 94.8126ms
+2023-03-17 23:55:11.045 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/Projects/1 - -
+2023-03-17 23:55:11.046 +10:30 [INF] Executing endpoint 'Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetById.HandleAsync (Keystone.TestArchitecture.Web)'
+2023-03-17 23:55:11.047 +10:30 [INF] Route matched with {action = "Handle", controller = "GetById", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetProjectByIdResponse]] HandleAsync(Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetProjectByIdRequest, System.Threading.CancellationToken) on controller Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetById (Keystone.TestArchitecture.Web).
+2023-03-17 23:55:11.050 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@__projectId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Name", "t"."Priority", "t0"."Id", "t0"."ContributorId", "t0"."Description", "t0"."IsDone", "t0"."ProjectId", "t0"."Title"
+FROM (
+    SELECT "p"."Id", "p"."Name", "p"."Priority"
+    FROM "Projects" AS "p"
+    WHERE "p"."Id" = @__projectId_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "ToDoItems" AS "t0" ON "t"."Id" = "t0"."ProjectId"
+ORDER BY "t"."Id"
+2023-03-17 23:55:11.055 +10:30 [INF] Executing OkObjectResult, writing value of type 'Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetProjectByIdResponse'.
+2023-03-17 23:55:11.064 +10:30 [INF] Executed action Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetById.HandleAsync (Keystone.TestArchitecture.Web) in 17.5621ms
+2023-03-17 23:55:11.065 +10:30 [INF] Executed endpoint 'Keystone.TestArchitecture.Web.Endpoints.ProjectEndpoints.GetById.HandleAsync (Keystone.TestArchitecture.Web)'
+2023-03-17 23:55:11.065 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/Projects/1 - - - 200 419 application/json;+charset=utf-8 20.0099ms

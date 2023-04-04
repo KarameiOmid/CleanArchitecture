@@ -1,0 +1,62 @@
+2023-03-18 00:01:17.460 +10:30 [INF] Registered 5 endpoints in 2139 milliseconds.
+2023-03-18 00:01:18.660 +10:30 [INF] User profile is available. Using 'C:\Users\78112\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-18 00:01:22.102 +10:30 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-03-18 00:01:22.999 +10:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-18 00:01:23.245 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-18 00:01:23.245 +10:30 [INF] Hosting environment: Development
+2023-03-18 00:01:23.245 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-18 00:01:23.333 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-03-18 00:01:23.557 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-18 00:01:24.341 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;charset=utf-8 1013.0808ms
+2023-03-18 00:01:24.463 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-03-18 00:01:24.463 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-03-18 00:01:24.477 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 12.7981ms
+2023-03-18 00:01:24.638 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 171.9341ms
+2023-03-18 00:01:26.116 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - -
+2023-03-18 00:01:26.463 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 346.4313ms
+2023-03-18 00:02:13.993 +10:30 [INF] Registered 5 endpoints in 1416 milliseconds.
+2023-03-18 00:02:14.678 +10:30 [INF] User profile is available. Using 'C:\Users\78112\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-18 00:02:17.077 +10:30 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-03-18 00:02:17.785 +10:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-18 00:02:18.006 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-18 00:02:18.007 +10:30 [INF] Hosting environment: Development
+2023-03-18 00:02:18.007 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-18 00:02:18.055 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-03-18 00:02:18.287 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-18 00:02:18.810 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;charset=utf-8 766.0195ms
+2023-03-18 00:02:18.859 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-03-18 00:02:18.860 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-03-18 00:02:18.874 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 14.5314ms
+2023-03-18 00:02:19.027 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 166.6039ms
+2023-03-18 00:02:19.441 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - -
+2023-03-18 00:02:20.004 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 562.9715ms
+2023-03-18 00:02:57.292 +10:30 [INF] Registered 5 endpoints in 1013 milliseconds.
+2023-03-18 00:02:57.989 +10:30 [INF] User profile is available. Using 'C:\Users\78112\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-18 00:03:00.575 +10:30 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-03-18 00:03:01.303 +10:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-18 00:03:01.683 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-18 00:03:01.684 +10:30 [INF] Hosting environment: Development
+2023-03-18 00:03:01.684 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-18 00:03:01.766 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-03-18 00:03:01.768 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-18 00:03:02.027 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-18 00:03:02.171 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 0 - - 411.2009ms
+2023-03-18 00:03:02.780 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;charset=utf-8 1023.5575ms
+2023-03-18 00:03:02.911 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-03-18 00:03:03.004 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 91.8003ms
+2023-03-18 00:03:03.005 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-03-18 00:03:03.414 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 409.2183ms
+2023-03-18 00:03:04.209 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - -
+2023-03-18 00:03:04.810 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 600.2864ms

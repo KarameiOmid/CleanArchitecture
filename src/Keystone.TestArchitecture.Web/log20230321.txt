@@ -1,0 +1,172 @@
+2023-03-21 12:47:31.904 +10:30 [INF] Registered 5 endpoints in 722 milliseconds.
+2023-03-21 12:47:32.914 +10:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-03-21 12:47:33.125 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-21 12:47:33.206 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 12:47:33.206 +10:30 [INF] Hosting environment: Development
+2023-03-21 12:47:33.206 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-21 12:47:33.226 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 12:47:33.295 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-21 12:47:33.429 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 203.0238ms
+2023-03-21 12:47:41.596 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 12:47:41.601 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 4.4339ms
+2023-03-21 12:48:41.486 +10:30 [INF] Registered 5 endpoints in 268 milliseconds.
+2023-03-21 12:48:42.364 +10:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-03-21 12:48:42.581 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-21 12:48:42.711 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 12:48:42.712 +10:30 [INF] Hosting environment: Development
+2023-03-21 12:48:42.712 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-21 12:48:42.736 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 12:48:42.842 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-21 12:48:42.995 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 259.4377ms
+2023-03-21 12:48:44.919 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 12:48:44.922 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 3.6964ms
+2023-03-21 12:48:46.427 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 12:48:46.429 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 2.3054ms
+2023-03-21 12:48:46.630 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 12:48:46.632 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 2.0875ms
+2023-03-21 12:48:46.819 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 12:48:46.822 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 2.7199ms
+2023-03-21 12:48:47.008 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 12:48:47.011 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 3.4030ms
+2023-03-21 12:48:47.166 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 12:48:47.168 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 2.0138ms
+2023-03-21 12:50:56.873 +10:30 [INF] Registered 5 endpoints in 184 milliseconds.
+2023-03-21 12:50:57.451 +10:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-03-21 12:50:57.627 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-21 12:50:57.724 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 12:50:57.725 +10:30 [INF] Hosting environment: Development
+2023-03-21 12:50:57.725 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-21 12:50:57.748 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 12:50:57.845 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-21 12:50:57.885 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 139.7595ms
+2023-03-21 12:51:03.999 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-03-21 12:51:04.180 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;charset=utf-8 180.8439ms
+2023-03-21 12:51:04.209 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-03-21 12:51:04.213 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 3.7033ms
+2023-03-21 12:51:04.238 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-03-21 12:51:04.282 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.2597ms
+2023-03-21 12:51:04.560 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - -
+2023-03-21 12:51:04.567 +10:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-03-21 12:51:04.734 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 174.3954ms
+2023-03-21 12:51:32.228 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/Contributors/1 - -
+2023-03-21 12:51:32.747 +10:30 [INF] Executed DbCommand (18ms) [Parameters=[@__contributorId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name"
+FROM "Contributors" AS "c"
+WHERE "c"."Id" = @__contributorId_0
+LIMIT 1
+2023-03-21 12:51:32.976 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/Contributors/1 - - - 200 - application/json;+charset=utf-8 748.6588ms
+2023-03-21 12:51:42.913 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/Contributors - -
+2023-03-21 12:51:42.940 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name"
+FROM "Contributors" AS "c"
+2023-03-21 12:51:42.951 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/Contributors - - - 200 - application/json;+charset=utf-8 37.6002ms
+2023-03-21 12:51:52.953 +10:30 [INF] Request starting HTTP/1.1 POST http://localhost:57678/Contributors application/json 20
+2023-03-21 12:51:53.181 +10:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name")
+VALUES (@p0)
+RETURNING "Id";
+2023-03-21 12:51:53.251 +10:30 [INF] Request finished HTTP/1.1 POST http://localhost:57678/Contributors application/json 20 - 200 - application/json;+charset=utf-8 297.0506ms
+2023-03-21 12:52:04.681 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/Contributors - -
+2023-03-21 12:52:04.683 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name"
+FROM "Contributors" AS "c"
+2023-03-21 12:52:04.684 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/Contributors - - - 200 - application/json;+charset=utf-8 3.3732ms
+2023-03-21 12:52:14.229 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/Contributors/3 - -
+2023-03-21 12:52:14.234 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@__contributorId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name"
+FROM "Contributors" AS "c"
+WHERE "c"."Id" = @__contributorId_0
+LIMIT 1
+2023-03-21 12:52:14.235 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/Contributors/3 - - - 200 - application/json;+charset=utf-8 6.1520ms
+2023-03-21 12:52:17.183 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/Contributors/2 - -
+2023-03-21 12:52:17.185 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@__contributorId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name"
+FROM "Contributors" AS "c"
+WHERE "c"."Id" = @__contributorId_0
+LIMIT 1
+2023-03-21 12:52:17.186 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/Contributors/2 - - - 200 - application/json;+charset=utf-8 2.2561ms
+2023-03-21 12:52:19.469 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/Contributors/1 - -
+2023-03-21 12:52:19.471 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@__contributorId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name"
+FROM "Contributors" AS "c"
+WHERE "c"."Id" = @__contributorId_0
+LIMIT 1
+2023-03-21 12:52:19.472 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/Contributors/1 - - - 200 - application/json;+charset=utf-8 2.5750ms
+2023-03-21 12:52:21.470 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/Contributors/3 - -
+2023-03-21 12:52:21.472 +10:30 [INF] Executed DbCommand (0ms) [Parameters=[@__contributorId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name"
+FROM "Contributors" AS "c"
+WHERE "c"."Id" = @__contributorId_0
+LIMIT 1
+2023-03-21 12:52:21.473 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/Contributors/3 - - - 200 - application/json;+charset=utf-8 2.4513ms
+2023-03-21 14:35:47.761 +10:30 [INF] Registered 5 endpoints in 136 milliseconds.
+2023-03-21 14:35:48.215 +10:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-03-21 14:35:48.361 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-21 14:35:48.414 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 14:35:48.414 +10:30 [INF] Hosting environment: Development
+2023-03-21 14:35:48.414 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-21 14:35:48.428 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-03-21 14:35:48.471 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-21 14:35:48.648 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;charset=utf-8 221.2805ms
+2023-03-21 14:35:48.682 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-03-21 14:35:48.687 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12028 application/javascript;+charset=utf-8 4.7283ms
+2023-03-21 14:35:48.698 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-03-21 14:35:48.738 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.8813ms
+2023-03-21 14:35:49.180 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - -
+2023-03-21 14:35:49.188 +10:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-03-21 14:35:49.325 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.6144ms
+2023-03-21 14:44:59.842 +10:30 [INF] Registered 5 endpoints in 230 milliseconds.
+2023-03-21 14:45:00.597 +10:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-03-21 14:45:00.783 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-21 14:45:00.873 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 14:45:00.873 +10:30 [INF] Hosting environment: Development
+2023-03-21 14:45:00.873 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-21 14:45:00.903 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 14:45:00.988 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-21 14:45:01.091 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 188.2618ms
+2023-03-21 14:45:38.492 +10:30 [INF] Registered 5 endpoints in 217 milliseconds.
+2023-03-21 14:45:39.088 +10:30 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-03-21 14:45:39.240 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-21 14:45:39.339 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 14:45:39.339 +10:30 [INF] Hosting environment: Development
+2023-03-21 14:45:39.339 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-21 14:45:39.366 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 14:45:39.447 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-21 14:45:39.537 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 404 - - 171.4137ms
+2023-03-21 15:23:45.113 +10:30 [INF] Registered 5 endpoints in 296 milliseconds.
+2023-03-21 15:23:45.789 +10:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-03-21 15:23:45.970 +10:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ToDoItems" AS "t")
+2023-03-21 15:23:46.059 +10:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 15:23:46.059 +10:30 [INF] Hosting environment: Development
+2023-03-21 15:23:46.059 +10:30 [INF] Content root path: C:\_git\TestClean\Keystone.TestArchitecture\src\Keystone.TestArchitecture.Web
+2023-03-21 15:23:46.086 +10:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - -
+2023-03-21 15:23:46.142 +10:30 [WRN] Failed to determine the https port for redirect.
+2023-03-21 15:23:46.189 +10:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - - - 0 - - 104.3560ms
