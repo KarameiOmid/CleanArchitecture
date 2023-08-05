@@ -1,4 +1,5 @@
-﻿using Keystone.TestArchitecture.Core.ServiceLearningAggregate;
+﻿using System.Reflection.Emit;
+using Keystone.TestArchitecture.Core.ServiceLearningAggregate;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -8,6 +9,9 @@ public class ServiceActivityConfiguration : IEntityTypeConfiguration<ServiceActi
 {
   public void Configure(EntityTypeBuilder<ServiceActivity> builder)
   {
+    builder.ToTable("ServiceActivity", "ServiceLearning")
+                .HasKey(t => t.Id);
+
     //builder.Property(p => p.ActivityDescription)
     //    .HasMaxLength(4000)
     //    .IsRequired();

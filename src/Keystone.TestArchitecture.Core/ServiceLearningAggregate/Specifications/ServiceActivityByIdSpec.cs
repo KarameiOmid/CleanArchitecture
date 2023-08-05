@@ -5,6 +5,7 @@ public class ServiceActivityByIdSpec : Specification<ServiceActivity>, ISingleRe
 {
   public ServiceActivityByIdSpec(int serviceActivityId)
   {
+    // Other ORM can be used here too. Like Dapper, Entity Framework, etc.
     Query
         .Where(serviceActivity => serviceActivity.Id == serviceActivityId);
   }

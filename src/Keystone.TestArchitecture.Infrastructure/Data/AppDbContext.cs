@@ -35,9 +35,6 @@ public class AppDbContext : DbContext
     base.OnModelCreating(modelBuilder);
 
     //TODO: if want to add all the entities here then AppDbContext will be a mess, is there a better way to do this?
-    modelBuilder.Entity<ServiceActivity>()
-                .ToTable("ServiceActivity", "ServiceLearning")
-                .HasKey(t => t.Id);
 
     modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
   }
